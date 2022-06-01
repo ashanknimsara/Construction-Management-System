@@ -14,12 +14,16 @@ class MachineryRentHome extends Component {
     manageMachines() {
         this.props.history.push('/machines');
       }
+      machineryRent() {
+        this.props.history.push('/rent-dashbord');
+      }
          
     render() {
         return (
             
             <div style={{ marginLeft: '30%',marginRight: '30%' }}>
                  <button className="btn btn-success " onClick={this.manageMachines}style={{ marginRight: '10px' }}>Manage Machines</button>
+                 <button className="btn btn-success " onClick={this.machineryRent}>Machinery Rent</button>
             </div>
             
         );
