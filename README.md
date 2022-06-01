@@ -24,4 +24,5 @@ Member 8 -IT20639808 - Wickramasinghe G.S.K.D.Z (SitaraWickramasinghe)
 
 
 Brief Description of Project - Simplify the day to day operations of Vihanga Electrical and Constructions by bringing all the manual functions of invoice and quotation handling, machinery rental, employee, salary, project, inventory and budget management into a web based system.
+
 Technologies used - React js, Spring Boot, Jasper Reports, mysql
