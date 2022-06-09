@@ -1,0 +1,50 @@
+.update,
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.updatebtn,
+.savebtn {
+    padding-top: 15px;
+}
+
+#heading {
+    padding-top: 60px;
+}
+
+#empTable {
+    box-shadow: 20px 20px 50px gray;
+    margin-bottom: 65px;
+}
+
+#emprepo {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#repG {
+    margin-top: 4.5%;
+    margin-left: 2%;
+    background-color: #ffffff;
+}
+
+#repGSearch {
+    margin-left: 95px;
+    margin-top: 10px;
+    width: 30%;
+}
+
+#empbtn {
+    margin-right: 2%;
+}
+
+.button {
+    margin-right: 0%;
+}
