@@ -16,9 +16,9 @@ class ListEmployeeComponent extends Component {
         this.deleteEmployee = this.deleteEmployee.bind(this);
     }
 
-    // generatePDF(){
-    //     this.props.history.push(`/employee-report`)
-    // }
+    generatePDF(){
+        this.props.history.push(`/employee-report`)
+    }
 
     deleteEmployee(empID){
 
@@ -94,9 +94,9 @@ class ListEmployeeComponent extends Component {
                 <div className='btn'>
                     <button className='btn btn-outline-success btn-lg' onClick={this.addEmployee}>Add Employee</button>
                 </div>
-                {/* <div className='btn'>
+                <div className='btn'>
                     <button className='btn btn-outline-primary btn-lg' onClick={() => this.generatePDF()}>Generate Report</button>
-                </div> */}
+                </div>
                  </div>            
                 <div className='row'>
                     <table id='empTable' className='table table-striped table-bordered'>
