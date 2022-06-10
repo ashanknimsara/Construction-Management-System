@@ -61,35 +61,35 @@ class ListEmployeeComponent extends Component {
     }
 
     //Filter data Function to filter Searched Item
-    // filterData(employees,searchKey){
-    //     console.log(searchKey);
-    //     console.log(employees);
-    //         const result = employees.filter((employee) =>
-    //         employee.empName.toLowerCase().includes(searchKey.toLowerCase()) ||
-    //         employee.address.toLowerCase().includes(searchKey.toLowerCase()) ||
-    //         employee.empType.toLowerCase().includes(searchKey.toLowerCase()) ||
-    //         employee.empName.toUpperCase().includes(searchKey.toUpperCase()) ||
-    //         employee.address.toUpperCase().includes(searchKey.toUpperCase()) ||
-    //         employee.empType.toUpperCase().includes(searchKey.toUpperCase()))
-    //         this.setState({employee:result})
-    // }
+    filterData(employees,searchKey){
+        console.log(searchKey);
+        console.log(employees);
+            const result = employees.filter((employee) =>
+            employee.empName.toLowerCase().includes(searchKey.toLowerCase()) ||
+            employee.address.toLowerCase().includes(searchKey.toLowerCase()) ||
+            employee.empType.toLowerCase().includes(searchKey.toLowerCase()) ||
+            employee.empName.toUpperCase().includes(searchKey.toUpperCase()) ||
+            employee.address.toUpperCase().includes(searchKey.toUpperCase()) ||
+            employee.empType.toUpperCase().includes(searchKey.toUpperCase()))
+            this.setState({employee:result})
+    }
 
     //Handle Searcher to get User input and send to Filter Function
-    // handleSearchArea =(e) =>{
-    //   const searchKey = e.target.value;
-    //   EmployeeService.getEmployees().then((res) => {
-    //     this.filterData(res.data,searchKey)
-    // });
-    // }
+    handleSearchArea =(e) =>{
+      const searchKey = e.target.value;
+      EmployeeService.getEmployees().then((res) => {
+        this.filterData(res.data,searchKey)
+    });
+    }
     render() {
         return (
             <div className='list'>
                 <h2 className='text-center' id='heading'>Employee Details</h2>
 
-                {/* <div id="repGSearch" className='col-lg-3 mt-2 mb-2 ml-5'>
+                <div id="repGSearch" className='col-lg-3 mt-2 mb-2 ml-5'>
                     <input className='form-control' type='search' placeholder='Search' name='searchQuery' onChange={this.handleSearchArea}>
                     </input>
-                </div> */}
+                </div>
                 <div className="button">
                 <div className='btn'>
                     <button className='btn btn-outline-success btn-lg' onClick={this.addEmployee}>Add Employee</button>
