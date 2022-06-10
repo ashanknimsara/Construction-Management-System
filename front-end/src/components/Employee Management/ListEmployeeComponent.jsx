@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import EmployeeService from '../services/EmployeeService';
 import '../assets/css/Employee.css';
-//import Swal from 'sweetalert2';
+import Swal from 'sweetalert2';
 
 class ListEmployeeComponent extends Component {
     constructor(props){
@@ -22,26 +22,26 @@ class ListEmployeeComponent extends Component {
 
     deleteEmployee(empID){
 
-        // Swal.fire({
-        //     title: 'Are you sure?',
-        //     text: "You won't be able to revert this!",
-        //     icon: 'warning',
-        //     showCancelButton: true,
-        //     confirmButtonColor: '#3085d6',
-        //     cancelButtonColor: '#d33',
-        //     confirmButtonText: 'Yes, delete it!'
-        //   }).then((result) => {
-        //     if (result.isConfirmed) {
-        //         EmployeeService.deleteEmployee(empID).then(res => {
-        //             this.setState({employee: this.state.employee.filter(employee => employee.empID!== empID)});
-        //         });
-        //       Swal.fire(
-        //         'Deleted!',
-        //         'Your file has been deleted.',
-        //         'success'
-        //       )
-        //     }
-        //   })
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+                EmployeeService.deleteEmployee(empID).then(res => {
+                    this.setState({employee: this.state.employee.filter(employee => employee.empID!== empID)});
+                });
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+            }
+          })
 
         console.log(empID)
     }
