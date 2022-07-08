@@ -1,0 +1,87 @@
+.update,
+
+.create {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 90vh;
+
+    width: 100%;
+
+    margin-left: 0%;
+
+    margin-right: 0%;
+
+}
+
+
+.btn {
+
+    padding-top: 25px;
+    margin-left: 30px;
+
+}
+
+
+
+#heading {
+
+    padding-top: 60px;
+
+}
+
+
+
+#Table {
+
+    box-shadow: 20px 20px 50px gray;
+
+}
+
+#expenseform {
+    box-shadow: 20px 20px 50px gray;
+}
+
+#emprepo {
+
+    margin-top: 5%;
+
+    margin-left: 2%;
+
+    margin-right: 2%;
+
+}
+
+
+
+#repG {
+
+    margin-top: 4.5%;
+
+    background-color: #ffffff;
+
+}
+
+
+
+#repGSearch {
+
+    margin-left: -9px;
+
+    margin-top: 10px;
+
+    width: 70%;
+
+}
+
+
+
+#empbtn {
+
+    margin-right: 2%;
+
+}
