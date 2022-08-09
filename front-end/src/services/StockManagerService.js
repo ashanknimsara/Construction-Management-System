@@ -14,6 +14,9 @@ class StockManagerService {
     getItemById(itemId) {
         return axios.get(ITEMS_BASE_URL+'/'+itemId);
     }
+    editItem(item, itemId){
+        return axios.put(ITEMS_BASE_URL+'/'+itemId,item);
+    }
 }
-export default StockManagerService;
+export default new StockManagerService();
 
